@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Registration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" href="dist/icons/favicon_io/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+
+            <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="inward-tab" data-bs-toggle="tab" data-bs-target="#inward-tab-pane" type="button" role="tab" aria-controls="inward-tab-pane" aria-selected="true">In Ward</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="channeling-tab" data-bs-toggle="tab" data-bs-target="#channeling-tab-pane" type="button" role="tab" aria-controls="channeling-tab-pane" aria-selected="false">Channeling</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="laboratory-tab" data-bs-toggle="tab" data-bs-target="#laboratory-tab-pane" type="button" role="tab" aria-controls="laboratory-tab-pane" aria-selected="false">Laboratory</button>
+                </li>
+                
+              </ul>
+              <div class="tab-content" id="myTabContent">
+               <!------------------------------------------------------ In ward Section ------------------------------------------------------------->
+                <div class="tab-pane fade show active" id="inward-tab-pane" role="tabpanel" aria-labelledby="inward-tab" tabindex="0">
+                   <div class="row mt-2">
+                    <div class="col-6"> 
+                        <div class="text-center">
+                          <h4>In Ward Patient Registration</h4><hr>
+                      </div>
+                        <form class="row g-2">
+                          <div class="col-auto">
+                            <label for="wrd_registration_no" class="visually-hidden">Registration Number</label>
+                            <input type="text" class="form-control" id="wrd_registration_no" name="wrd_registration_no" placeholder="Registration Number">
+                          </div>
+                          <div class="col-auto">
+                            <button type="submit" class="btn btn-primary mb-3" id="wrd_search" name="wrd_search"><i class="bi bi-search"></i></button>
+                          </div>
+                        </form>
+          
+                        <div class="border bg bg-light ">
+                          <h4 class="text-center">Genaral Details</h4>
+                        </div>
+          
+                        <form class="row g-2">
+                          <div class="col-md-6">
+                            <label for="wrd_patient_id" class="form-label"></label>
+                            <input type="email" class="form-control" id="wrd_patient_id" name="wrd_patient_id" placeholder="Patient ID">
+                          </div>
+          
+                          <div class="col-md-6">
+                             
+                            </div>
+          
+                          <div class="col-md-2">
+                            <label for="inputPassword4" class="form-label"></label>
+                            <select id="wrd_initials" name="wrd_initials" class="form-select">
+                              <option selected>MR</option>
+                              <option >MRS</option>
+                              <option >HONS</option>
+                            </select>
+                          </div>
+          
+                          <div class="col-md-10">
+                              <label for="wrd_name" class="form-label"></label>
+                              <input type="password" class="form-control" id="wrd_name" name="wrd_name"  placeholder="Name">
+                            </div>
+                          <div class="col-6">
+                            <label for="wrd_gender" class="form-label"></label>
+                            <select id="wrd_gender" name="wrd_gender" class="form-select">
+                              <option selected>Male</option>
+                              <option >Female</option>
+                              <option >Other</option>
+                            </select>
+                          </div>
+                          <div class="col-8">
+                             
+                            </div>
+          
+                          <div class="col-6">
+                            <label for="wrd_nic" class="form-label"></label>
+                            <input type="text" class="form-control" id="wrd_nic" name="wrd_nic" placeholder="NIC Number">
+                          </div>
+                          <div class="col-6">
+                              <label for="wrd_passport_no" class="form-label"></label>
+                              <input type="text" class="form-control" id="wrd_passport_no" name="wrd_passport_no" placeholder="Passport Number">
+                            </div>
+          
+          
+                            <div class="col-md-3">
+                              <label for="wrd_age" class="form-label"></label>
+                              <input type="text" class="form-control" id="wrd_age" name="wrd_age" placeholder="Age" disabled>
+                            </div>
+                          <div class="col-md-3">
+                            <label for="wrd_years" class="form-label"></label>
+                            <input type="text" class="form-control" id="wrd_years" name="wrd_years" placeholder="Years">
+                          </div>
+                          <div class="col-md-3">
+                              <label for="wrd_months" class="form-label"></label>
+                              <input type="text" class="form-control" id="wrd_months" name="wrd_months" placeholder="Months">
+                          </div>
+                          <div class="col-md-3">
+                            <label for="wrd_dates" class="form-label"></label>
+                            <input type="text" class="form-control" id="wrd_dates" name="wrd_dates" placeholder="Dates">
+                          </div>
+          
+                          <div class="col-12">
+                            <label for="wrd_contact1" class="form-label"></label>
+                            <input type="text" class="form-control" id="wrd_contact1" name="wrd_contact1" placeholder="Contact 1">
+                          </div>
+          
+                          <div class="col-12">
+                              <label for="wrd_contact2" class="form-label"></label>
+                              <input type="text" class="form-control" id="wrd_contact2" name="wrd_contact2" placeholder="Contact 2">
+                          </div>
+          
+                          <div class="col-12">
+                              <label for="wrd_address" class="form-label"></label>
+                              <textarea class="form-control" id="wrd_address" name="wrd_address" placeholder="Address"></textarea>
+                          </div>
+                          
+          
+                          <div class="col-12 mt-3">
+                            <button type="button" class="btn btn-primary" id="wrd_btn_save" name="wrd_btn_save">Save &nbsp;<i class="bi bi-floppy" ></i></button>
+                            <button type="button" class="btn btn-warning" id="wrd_btn_update" name="wrd_btn_update">Update &nbsp; <i class="bi bi-pencil"></i></button>
+                            <button type="button" class="btn btn-dark" id="wrd_btn_clear" name="wrd_btn_clear">Clear &nbsp; <i class="bi bi-arrow-clockwise"></i></button>      
+                          </div>
+                        </form>
+          
+                    </div>
+                    <div class="col-6">
+                       ---------------------- Half----------------------
+                    </div>
+                   </div>
+
+
+                </div>
+                 <!------------------------------------------------------ Channeling Section ------------------------------------------------------------->
+                <div class="tab-pane fade" id="channeling-tab-pane" role="tabpanel" aria-labelledby="channeling-tab" tabindex="0">
+                    <div class="row mt-2">
+                        <div class="col-6">
+                            <div class="text-center">
+                              <h4>Channeling Patient Registration</h4><hr>
+                          </div>
+                            <form class="row g-2">
+                              <div class="col-auto">
+                                <label for="cpr_contact_no" class="visually-hidden"></label>
+                                <input type="text" class="form-control" id="cpr_contact_no" name="cpr_contact_no" placeholder="Contact Number">
+                              </div>
+                              <div class="col-auto">
+                                <button type="submit" class="btn btn-primary mb-3" id="btn_cpr_search" name="btn_cpr_search"><i class="bi bi-search"></i></button>
+                              </div>
+                            </form>
+              
+                            <div class="border bg bg-light ">
+                              <h4 class="text-center">Genaral Details</h4>
+                            </div>
+              
+                            <form class="row g-2">
+                              <div class="col-md-6">
+                                <label for="cpr_patient_id" class="form-label"></label>
+                                <input type="email" class="form-control" id="cpr_patient_id" name="cpr_patient_id" placeholder="Patient ID">
+                              </div>
+              
+                              <div class="col-md-6">
+                                 
+                                </div>
+              
+                              <div class="col-md-2">
+                                <label for="cpr_initials" class="form-label"></label>
+                                <select id="cpr_initials" name="cpr_initials" class="form-select">
+                                  <option selected>MR</option>
+                                  <option >MRS</option>
+                                  <option >HONS</option>
+                                </select>
+                              </div>
+              
+                              <div class="col-md-10">
+                                  <label for="cpr_name" class="form-label"></label>
+                                  <input type="password" class="form-control" id="cpr_name" name="cpr_name"  placeholder="Name">
+                                </div>
+                              <div class="col-6">
+                                <label for="cpr_gender" class="form-label"></label>
+                                <select id="cpr_gender" name="cpr_gender" class="form-select">
+                                  <option selected>Male</option>
+                                  <option >Female</option>
+                                  <option >Other</option>
+                                </select>
+                              </div>
+                              <div class="col-8">
+                                 
+                                </div>
+              
+                              <div class="col-6">
+                                <label for="cpr_nic" class="form-label"></label>
+                                <input type="text" class="form-control" id="cpr_nic" name="cpr_nic" placeholder="NIC Number">
+                              </div>
+                              <div class="col-6">
+                                  <label for="cpr_passport_no" class="form-label"></label>
+                                  <input type="text" class="form-control" id="cpr_passport_no" name="cpr_passport_no" placeholder="Passport Number">
+                                </div>
+              
+              
+                                <div class="col-md-3">
+                                  <label for="cpr_age" class="form-label"></label>
+                                  <input type="text" class="form-control bg-light" id="cpr_age" name="cpr_age" placeholder="Age" readonly>
+                                </div>
+                              <div class="col-md-3">
+                                <label for="cpr_years" class="form-label"></label>
+                                <input type="text" class="form-control" id="cpr_years" name="cpr_years" placeholder="Years">
+                              </div>
+                              <div class="col-md-3">
+                                  <label for="cpr_months" class="form-label"></label>
+                                  <input type="text" class="form-control" id="cpr_months" name="cpr_months" placeholder="Months">
+                              </div>
+                              <div class="col-md-3">
+                                <label for="cpr_dates" class="form-label"></label>
+                                <input type="text" class="form-control" id="cpr_dates" name="cpr_dates" placeholder="Dates">
+                              </div>
+              
+                              <div class="col-12">
+                                <label for="cpr_contact1" class="form-label"></label>
+                                <input type="text" class="form-control" id="cpr_contact1" name="cpr_contact1" placeholder="Contact 1">
+                              </div>
+              
+                              <!-- <div class="col-12">
+                                  <label for="cpr_contact2" class="form-label"></label>
+                                  <input type="text" class="form-control" id="cpr_contact2" name="cpr_contact2" placeholder="Contact 2">
+                              </div>
+              
+                              <div class="col-12">
+                                  <label for="cpr_address" class="form-label"></label>
+                                  <input type="text" class="form-control" id="cpr_address" name="cpr_address" placeholder="Address">
+                              </div> -->
+                              
+              
+                              <div class="col-12">
+                                <button type="button" class="btn btn-primary">Save &nbsp;<i class="bi bi-floppy"></i></button>
+                                <button type="button" class="btn btn-warning">Update &nbsp;<i class="bi bi-pencil"></i></button>
+                                <button type="button" class="btn btn-dark">Clear &nbsp;<i class="bi bi-arrow-clockwise"></i></button>
+                              </div>
+                            </form>  
+                                          
+                            <div class="border bg bg-light mt-4 ">
+                                <h4 class="text-center">Appointment Details</h4>
+                              </div> 
+                              <form class="row mt-3">
+                                <div class="col-8">
+                                  <label for="cpr_consultant" class="visually-hidden"></label>
+                                  <input type="text" class="form-control" id="cpr_contact_no" name="cpr_contact_no" placeholder="Consultant / Specility">
+                                </div>
+                                <div class="col-auto">
+                                  <button type="submit" class="btn btn-primary mb-3" id="btn_cpr_search" name="btn_cpr_search"><i class="bi bi-search"></i></button>
+                                </div>
+                              </form>    
+                              
+                              <div>
+                                <table class="table table-striped">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                 Consultant 1 
+                                                 
+                                            </td>
+                                            <td>
+                                                Visit Time
+                                                
+                                           </td>
+                                           <td align="right">
+                                            
+                                            <button class="btn btn-dark"> Select</button>
+                                       </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                 Consultant 1 
+                                                 
+                                            </td>
+                                            <td>
+                                                Visit Time
+                                                
+                                           </td>
+                                           <td align="right">
+                                            
+                                            <button class="btn btn-dark"> Select</button>
+                                       </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                 Consultant 1 
+                                                 
+                                            </td>
+                                            <td>
+                                                Visit Time
+                                                
+                                           </td>
+                                           <td align="right">
+                                            
+                                            <button class="btn btn-dark"> Select</button>
+                                       </td>
+                                        </tr>
+                                    </tbody>
+                                    
+                                  </table>
+                              </div>
+                        </div>
+                        <div class="col-6">
+                            --------------------------------------- Half---------------------------------------
+                        </div>
+                    </div>
+                </div>
+                 <!------------------------------------------------------ Laboratory Section ------------------------------------------------------------->
+                <div class="tab-pane fade" id="laboratory-tab-pane" role="tabpanel" aria-labelledby="laboratory-tab" tabindex="0">
+                    <div class="row mt-2">
+                        <div class="col-6">
+                            <div>
+                              <h4>In Laboratory Patient Registration</h4><hr>
+                          </div>
+                            <form class="row g-2">
+                              <div class="col-auto">
+                                <label for="inputPassword2" class="visually-hidden">Registration Number</label>
+                                <input type="text" class="form-control" id="inputPassword2" placeholder="Registration Number">
+                              </div>
+                              <div class="col-auto">
+                                <button type="submit" class="btn btn-primary mb-3"><i class="bi bi-search"></i></button>
+                              </div>
+                            </form>
+              
+                            <div class="border bg bg-light ">
+                              <h4 class="text-center">Genaral Details</h4>
+                            </div>
+              
+                            <form class="row g-2">
+                              <div class="col-md-6">
+                                <label for="inputEmail4" class="form-label"></label>
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="Patient ID">
+                              </div>
+              
+                              <div class="col-md-6">
+                                 
+                                </div>
+              
+                              <div class="col-md-2">
+                                <label for="inputPassword4" class="form-label"></label>
+                                <select id="inputState" class="form-select">
+                                  <option selected>MR</option>
+                                  <option >MRS</option>
+                                  <option >HONS</option>
+                                </select>
+                              </div>
+              
+                              <div class="col-md-10">
+                                  <label for="inputPassword4" class="form-label"></label>
+                                  <input type="password" class="form-control" id="inputPassword4"  placeholder="Name">
+                                </div>
+                              <div class="col-6">
+                                <label for="inputAddress" class="form-label"></label>
+                                <select id="inputState" class="form-select">
+                                  <option selected>Male</option>
+                                  <option >Female</option>
+                                  <option >Other</option>
+                                </select>
+                              </div>
+                              <div class="col-8">
+                                 
+                                </div>
+              
+                              <div class="col-6">
+                                <label for="inputAddress2" class="form-label"></label>
+                                <input type="text" class="form-control" id="inputAddress2" placeholder="NIC Number">
+                              </div>
+                              <div class="col-6">
+                                  <label for="inputAddress2" class="form-label"></label>
+                                  <input type="text" class="form-control" id="inputAddress2" placeholder="Passport Number">
+                                </div>
+              
+              
+                                <div class="col-md-3">
+                                  <label for="inputCity" class="form-label"></label>
+                                  <input type="text" class="form-control" id="inputCity" placeholder="Age" disabled>
+                                </div>
+                              <div class="col-md-3">
+                                <label for="Years" class="form-label"></label>
+                                <input type="text" class="form-control" id="inputCity" placeholder="Years">
+                              </div>
+                              <div class="col-md-3">
+                                  <label for="Months" class="form-label"></label>
+                                  <input type="text" class="form-control" id="inputCity" placeholder="Months">
+                              </div>
+                              <div class="col-md-3">
+                                <label for="Dates" class="form-label"></label>
+                                <input type="text" class="form-control" id="inputZip" placeholder="Dates">
+                              </div>
+              
+                              <div class="col-12">
+                                <label for="Contact1" class="form-label"></label>
+                                <input type="text" class="form-control" id="inputZip" placeholder="Contact 1">
+                              </div>
+              
+                              <div class="col-12">
+                                  <label for="Contact2" class="form-label"></label>
+                                  <input type="text" class="form-control" id="inputZip" placeholder="Contact 2">
+                              </div>
+              
+                              <div class="col-12">
+                                  <label for="Address" class="form-label"></label>
+                                  <input type="text" class="form-control" id="inputZip" placeholder="Address">
+                              </div>
+                              
+              
+                              <div class="col-12">
+                                  <button type="button" class="btn btn-primary">Register</button>
+                              </div>
+                            </form>
+              
+                        </div>
+                        <div class="col-6">Half</div>
+                    </div>
+                  
+                </div>
+               
+              </div>
+        </div>
+
+    </div>
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

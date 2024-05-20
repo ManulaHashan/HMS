@@ -1,0 +1,567 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+        <link rel="icon" href="dist/icons/favicon_io/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="dist/css/registration.css">
+        
+    </head>
+    <body>
+
+        <nav class="navbar bg bg-primary">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="dist/icons/favicon_io/favicon.ico" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            <span class="text-light">Patient Registration</span> 
+            </a>
+            <button class="btn btn-primary position-absolute top-0 end-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+            </button>
+            
+            <div class="offcanvas offcanvas-end" style="width: 200px;" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Departments</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+                <div class="offcanvas-body">
+            
+                    <div>
+                        <img src="dist/Images/lab.png" alt=""> <br>
+                        <a class="navbar-brand text-secondary " href="#lab" data-bs-toggle="collapse" data-bs-target="#lab" aria-expanded="false" aria-controls="lab">Laboratory</a>
+                    </div><hr>
+            
+                    <div>
+                        <img src="dist/Images/appointment.png" alt=""> <br>
+                        <a class="navbar-brand text-secondary " href="#channel" data-bs-toggle="collapse" data-bs-target="#channel" aria-expanded="false" aria-controls="channel">Appointments</a>
+                    </div><hr>
+                    <div>
+                        <img src="dist/Images/opd.png" alt=""> <br>
+                        <a class="navbar-brand text-secondary" href="#">OPD</a>
+                    </div><hr>
+                    <div>
+                        <img src="dist/Images/ward.png" alt=""> <br>
+                        <a class="navbar-brand text-secondary " href="#">Ward Admission</a>
+                    </div><hr>
+                    <div>
+                        <img src="dist/Images/pharmacy.png" alt=""> <br>
+                        <a class="navbar-brand text-secondary" href="#">Pharmacy</a>
+                    </div><hr>
+                    <div>
+                        <img src="dist/Images/x-ray.png" alt=""> <br>
+                        <a class="navbar-brand text-secondary " href="#"><h5>X-Ray</h5></a>
+                    </div><hr>
+                </div>
+                </div>
+            </div>
+        </nav> <br>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-5 ">
+                    <div class="row">
+                        <div class="col-4">
+                        <img src="dist/Images/user.png"class="img-thumbnail">
+                        </div>
+                        <div class="col-8">
+                            <label for="wrd_registration_no" class="visually-hidden"></label>
+                            <input type="text" class="form-control" id="wrd_registration_no" name="wrd_registration_no" placeholder="&#xF002; Search : Name / NIC / ContactNo" style="font-family:Arial, FontAwesome" >
+                        
+                            <div class="container g-1 mt-2">
+                                <div class="row">
+                                <div class="col">
+                                    <label for="status" class="form-label">Status</label>
+                                </div>
+                                <div class="col">
+                                    <label for="status_A" class="form-label text-success fw-bold">Active</label>
+                                </div>
+                                <div class="col">
+                                        <i class="bi bi-camera-fill" style="font-size:large"></i>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="container g-1 mt-2">
+                                <div class="row">
+                                <div class="col">
+                                    <label class="form-label" for="visit">Last Visit Date :</label>
+                                </div>
+                                <div class="col">
+                                    <label for="status_A" class="form-label fw-bold">2024-04-01</label>
+                                </div>
+
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-4">
+                        <label for="name" class="form-label  mt-2">Patient Name</label>
+                        </div>
+                        <div class="col-8">
+                            <div class="row">
+                                <div class="col-4">
+                                    <select name="title" id="" class="form-select">
+                                        <option selected>Mr</option>
+                                        <option >Mrs</option>
+                                        <option >Miss</option>
+                                        <option >Dr</option>
+                                        <option >Hons</option>
+                                        <option >Dog</option>
+                                    </select>
+                                </div>
+                                <div class="col-8">
+                                    <input type="text" id="name" name="name" value="" required class="form-control"/> 
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-4 ">
+                        <label for="sname" class="form-label mt-2">Surname</label>
+                        </div>
+                        <div class="col-8">
+                            <input type="text" id="sname" name="sname" value="" required class="form-control"/> 
+                        </div>   
+                    </div>
+                    
+
+                    <div class="row mt-2">
+                        <div class="col-4">
+                        <label for="gender" class="form-label mt-2">Gender</label>
+                        </div>
+                        <div class="col-8">
+                            <div class="row">
+                                <div class="col-4">
+                                    <select name="gender" id="gender" class="form-select">
+                                        <option selected>Male</option>
+                                        <option >Female</option>
+                                        <option >Other</option>
+                                    </select>
+                                </div>
+                                <div class="col-2 mt-2">
+                                    <label for="dob" class="form-label">DOB</label> 
+                                </div>
+                                <div class="col-6">
+                                    <input type="date" class="form-control" name="dob" id="dob" />
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+
+                    <div class="row mt-2">
+                        <div class="col-4 mt-2">
+                        <label for="age" class="form-label">Age</label>
+                        </div>
+                        <div class="col-8">
+                            <div class="row">
+                                <div class="col-3">
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="col-1 mt-2">
+                                    <label for="Y" class="form-label  ">Y</label>
+                                </div>
+                                <div class="col-3">
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="col-1 mt-2">
+                                    <label for="M" class="form-label ">M</label>
+                                </div>
+                                <div class="col-3">
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="col-1 mt-2">
+                                    <label for="D" class="form-label ">D</label>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+
+
+                    <div class="row mt-4">
+                        <h6 class="text-primary fw-bold fst-italic text-decoration-underline ">Contact Details</h6>        
+                    </div>
+
+                    <div class="row mt-2">
+                        <div class="col-4 ">
+                        <label for="contact" class="form-label mt-2">Contact Number</label>
+                        </div>
+                        <div class="col-8">
+                            <input type="text" id="contact" name="contact" value="" required class="form-control"/> 
+                        </div>   
+                    </div>
+                    
+                    <div class="row mt-2">
+                        <div class="col-4 ">
+                        <label for="whts" id="whatsapp" class="form-label mt-2">Whatsapp Number</label>
+                        </div>
+                        <div class="col-8">
+                            <input type="text" id="whts" name="whts" value="" required class="form-control"/> 
+                        </div>   
+                    </div>
+                    
+                    <div class="row mt-2">
+                        <div class="col-4 ">
+                        <label for="email" class="form-label mt-2">Email Address</label>
+                        </div>
+                        <div class="col-8">
+                            <input type="text" id="email" name="email" value="" required class="form-control"/> 
+                        </div>   
+                    </div>
+                    
+                    <div class="row mt-2">
+                        <div class="col-4 ">
+                        <label for="address" class="form-label mt-2">Address</label>
+                        </div>
+                        <div class="col-8">
+                            <input type="text" id="address" name="address" value="" required class="form-control"/> 
+                        </div>   
+                    </div>
+                    
+
+                    <div class="row mt-4">
+                        <h6 class="text-primary fw-bold fst-italic text-decoration-underline ">Identification Details</h6>        
+                </div>
+
+                <div class="row mt-2">
+                    <div class="col-4 ">
+                        <label for="nic" class="form-label mt-2">NIC Number</label>
+                    </div>
+                    <div class="col-8">
+                        <input type="text" id="nic" name="nic" value="" required class="form-control"/> 
+                    </div>   
+                </div>
+                
+                <div class="row mt-2">
+                    <div class="col-4 ">
+                        <label for="pass" class="form-label mt-2">Passport Number</label>
+                    </div>
+                    <div class="col-8">
+                        <input type="text" id="pass" name="pass" value="" required class="form-control"/> 
+                    </div>   
+                </div>
+                
+                <div class="row mt-2">
+                    <div class="col-4 ">
+                        <label for="ref" class="form-label mt-2">Reference ID</label>
+                    </div>
+                    <div class="col-8">
+                        <input type="text" id="ref" name="ref" value="" required class="form-control"/> 
+                    </div>   
+                </div>
+                
+                <div class="row g-2 mt-5">
+                    <div class="d-grid gap-2 d-md-block">
+                        <button class="btn btn-success" type="button">Save / New Session &nbsp;<i class="bi bi-floppy" ></i></button>
+                        <button class="btn btn-warning" type="button">Update Details &nbsp; <i class="bi bi-pencil"></i></button>
+                        <button class="btn btn-danger" type="button">Delete Profile &nbsp; <i class="bi bi-trash"></i></button>
+                    </div>  
+        
+
+                </div>
+                
+
+                </div>
+                
+                <div class="col-sm-7">
+    <!-- --------------------------------------------------Laboratory Section------------------------------------------------------------------------------- -->
+                    <section class="collapse collapse-horizontal" id="lab">
+                        <div class="row mt-4">
+                            <h6 class="text-primary fw-bold fst-italic text-decoration-underline ">Laboratory Details</h6>        
+                    </div>
+                        <form>
+                            <div class="row mt-2">
+                                <div class="col-3 ">
+                                <label for="refName" class="form-label mt-2">Reference Name</label>
+                                </div>
+                                <div class="col-9">
+                                    <input type="text" id="refName" name="refName" value="" required class="form-control"/> 
+                                </div>   
+                            </div>
+
+                            <div class="row mt-2">
+                                <div class="col-3 mt-2">
+                                <label for="fasting" class="form-label">Fasting Time</label>
+                                </div>
+                                <div class="col-9">
+                                    <div class="row mt-2">
+                                        <div class="col-5">
+                                            <input type="text" id="fasting" class="form-control">
+                                        </div>
+                                        <div class="col-2">
+                                            <label for="re_deli" class="form-label  ">Report Deliver</label>
+                                        </div>
+                                        <div class="col-5">
+                                            <input type="text" id="re_deli" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>   
+                            </div>
+
+                            <div class="row mt-2">
+                                <div class="col-3 mt-2">
+                                <label for="remark" class="form-label">Lab Remark</label>
+                                </div>
+                                <div class="col-9">
+                                    <div class="row">
+                                        <div class="col-5">
+                                            <input type="text" id="remark" class="form-control">
+                                        </div>
+                                        <div class="col-2 mt-2">
+                                            <label for="categ" class="form-label  ">Category</label>
+                                        </div>
+                                        <div class="col-5">
+                                            <input type="text" id="categ" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>   
+                            </div>
+
+                            <div class="row mt-4">
+                                <h6 class="text-primary fw-bold fst-italic text-decoration-underline "> Test Orders</h6>        
+                        </div>
+                        
+                        <div class="row mt-2">
+                            <div class="col-3 mt-3">
+                            <label for="investigation" class="form-label">Investigation</label>
+                            </div>
+                            <div class="col-9">
+                                <div class="row mt-2">
+                                    <div class="col-9">
+                                        <select name="test" id="investigation" class="form-select">
+                                            <option ></option>
+                                            <option >Full Blood Count</option>
+                                            <option >Urine Full Report</option>
+                                            <option >SERUM ALBUMIN</option>
+                                            <option >ALKALINE PHOSPHATASE</option>
+                                            <option >SERUM AMYLASE</option>
+                                            <option >ASPIRATORY FLUID CULTURE & ABST</option>
+                                            <option >Blood Picture </option>
+                                            <option >BLOOD UREA</option>
+                                            <option >SERUM CALCIUM</option>
+                                            <option >CREATININE PHOSPHO KINASE</option>
+                                            <option >GLUCOSE TOLFRANCE TEST</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-3 mt-2">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label for="by_code" id="by_code" class="form-label">By Code </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>
+    <br>
+                        <div class="row mt-2">
+                            <div class="col-12 ">
+                                <table class="table table-hover table-bordered">
+                                    <thead align="center">
+                                        <tr>
+                                        <th scope="col">ID</th>
+                                        <th scope="col">Investigation</th>
+                                        <th scope="col">Price Rs.</th>
+                                        <th scope="col">Select</th>
+                                        <th scope="col"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Full Blood Count</td>
+                                            <td align="right">750</td>
+                                            <td align="center"> <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+                                            <td> </td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>UFR</td>
+                                            <td align="right">750</td>
+                                            <td align="center"> <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+                                            <td> </td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>SFR</td>
+                                            <td align="right">750</td>
+                                            <td align="center"> <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+                                            <td> </td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">4</th>
+                                            <td>Lipid Profile</td>
+                                            <td align="right">750</td>
+                                            <td align="center"> <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+                                            <td> </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>   
+                        </div>
+                        </form>
+                    </section>
+    <!-- --------------------------------------------------Channeling (Apointment) Section------------------------------------------------------------------------------- -->
+                    <section class="collapse collapse-horizontal" id="channel">
+                        <div class="row mt-4">
+                            <h6 class="text-primary fw-bold fst-italic text-decoration-underline ">Appointments Details</h6>        
+                    </div>
+                    <Form>
+                        <div class="row mt-2">
+                            <div class="col-3 mt-2">
+                            </div>
+                            <div class="col-9">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <div class="card bg bg-secondary text-light" style="width: 9rem;">
+                                            <div class="card-body">
+                                            <p class="card-text">&nbsp;&nbsp;Next App. No</p>
+                                            <h1 class="card-title">&nbsp;&nbsp;&nbsp;25</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-3 mt-3">
+                            <label for="speciality" class="form-label">Speciality</label>
+                            </div>
+                            <div class="col-9">
+                                <div class="row mt-2">
+                                    <div class="col-9">
+                                        <select name="speciality" id="speciality" class="form-select">
+                                            <option ></option>
+                                            <option>VOG</option>
+                                            <option >Cardiologyst</option>
+                                            <option >Hematalogy </option>
+                                            <option > Eye Surgent </option>
+                                            <option >Full Body Sergent  </option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>
+
+                        <div class="row mt-2">
+                            <div class="col-3 mt-3">
+                            <label for="Dname" class="form-label">Doctor Name</label>
+                            </div>
+                            <div class="col-9">
+                                <div class="row mt-2">
+                                    <div class="col-9">
+                                        <select name="Dname" id="Dname" class="form-select">
+                                            <option ></option>
+                                            <option >Dr.Rohan Kankanam</option>
+                                            <option >Dr.Kamal Somachandra</option>
+                                            <option >Dr.Asitha  Wijesuriya</option>
+                                            <option > DR.Saman Edirisingha  </option>
+                                            <option >Dr. R.S Pinnapola</option>
+                                        </select>
+                                        
+                                    </div>
+                                    <div class="col-3">
+                                        <button type="button" class="btn btn-dark" data-bs-toggle="popover" data-bs-title="Doctor's Shedule" data-bs-content="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monday 4.00pm - 6.00 pm &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tuesday 4.00pm - 6.00 pm
+                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wednesday 4.00pm - 6.00 pm &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thursday 4.00pm - 6.00 pm &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Friday 4.00pm - 6.00 pm &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Saturday 4.00pm - 6.00 pm
+                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sunday 4.00pm - 6.00 pm" >Shedule</button>
+                                        
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>
+
+                        <div class="row mt-2">
+                            <div class="col-3 mt-3 ">
+                            <label for="Appdate" class="form-label mt-2">App. Date </label>
+                            </div>
+                            <div class="col-9">
+                                <div class="row mt-2">
+                                    <div class="col-9">
+                                        <input type="date" class="form-control" name="Appdate" id="Appdate" />
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>
+
+                        <div class="row mt-2">
+                            <div class="col-3 mt-2">
+                            <label for="session" class="form-label">Session</label>
+                            </div>
+                            <div class="col-9">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <select name="session" id="session" class="form-select">
+                                            <option ></option>
+                                            <option >Session-1</option>
+                                            <option >Session-2</option>
+                                            <option >Session-3</option>
+                                            <option >Session-4</option>
+                                            <option >Session-5</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-1 mt-2">
+                                        <label for="type" class="form-label  ">Type</label>
+                                    </div>
+                                    <div class="col-4">
+                                        <select name="type" id="type" class="form-select">
+                                            <option ></option>
+                                            <option >OTP</option>
+                                            <option >Walkin</option>
+                                            <option >Ward</option>
+                                            <option >Online Booking</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>
+                            <br>
+                        <div class="row mt-2">
+                            <div class="col-3 mt-2">
+                            </div>
+                            <div class="col-9">
+                                <div class="row">
+                                    <div class="col-4">
+                                        
+                                    </div>
+                                    <div class="col-1 mt-2">
+                                        
+                                    </div>
+                                    <div class="col-4">
+                                        <button type="button" class="btn btn-success">Make Appointment  </button>
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>
+        
+                    </Form>
+                    
+                    </section>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+        <script>
+            var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+            var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+              return new bootstrap.Popover(popoverTriggerEl)
+            })
+        </script>
+    </body>
+    </html>

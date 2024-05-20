@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="icon" href="dist/icons/favicon_io/favicon.ico" type="image/x-icon">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+
+    </head>
+    <title>In Ward</title>
+</head>
+
+<body>
+    <div class="container text-center">
+      
+        <!-- Columns are always 50% wide, on mobile and desktop -->
+        <div class="row">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false" disabled>Disabled</button>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">...</div>
+                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">...</div>
+                <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...</div>
+                <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">...</div>
+              </div>
+          <div class="col-6">
+            <ul class="nav justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">In Ward</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Channeling</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Laboratory</a>
+              </li>
+            </ul>
+
+
+              <hr>
+              <div>
+                <h4>In Ward Patient Registration</h4><hr>
+            </div>
+              <form class="row g-2">
+                <div class="col-auto">
+                  <label for="inputPassword2" class="visually-hidden">Registration Number</label>
+                  <input type="text" class="form-control" id="inputPassword2" placeholder="Registration Number">
+                </div>
+                <div class="col-auto">
+                  <button type="submit" class="btn btn-primary mb-3"><i class="bi bi-search"></i></button>
+                </div>
+              </form>
+
+              <div class="border bg bg-light ">
+                <h4 class="text-center">Genaral Details</h4>
+              </div>
+
+              <form class="row g-2">
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label"></label>
+                  <input type="email" class="form-control" id="inputEmail4" placeholder="Patient ID">
+                </div>
+
+                <div class="col-md-6">
+                   
+                  </div>
+
+                <div class="col-md-2">
+                  <label for="inputPassword4" class="form-label"></label>
+                  <select id="inputState" class="form-select">
+                    <option selected>MR</option>
+                    <option >MRS</option>
+                    <option >HONS</option>
+                  </select>
+                </div>
+
+                <div class="col-md-10">
+                    <label for="inputPassword4" class="form-label"></label>
+                    <input type="password" class="form-control" id="inputPassword4"  placeholder="Name">
+                  </div>
+                <div class="col-6">
+                  <label for="inputAddress" class="form-label"></label>
+                  <select id="inputState" class="form-select">
+                    <option selected>Male</option>
+                    <option >Female</option>
+                    <option >Other</option>
+                  </select>
+                </div>
+                <div class="col-8">
+                   
+                  </div>
+
+                <div class="col-6">
+                  <label for="inputAddress2" class="form-label"></label>
+                  <input type="text" class="form-control" id="inputAddress2" placeholder="NIC Number">
+                </div>
+                <div class="col-6">
+                    <label for="inputAddress2" class="form-label"></label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="Passport Number">
+                  </div>
+
+
+                  <div class="col-md-3">
+                    <label for="inputCity" class="form-label"></label>
+                    <input type="text" class="form-control" id="inputCity" placeholder="Age" disabled>
+                  </div>
+                <div class="col-md-3">
+                  <label for="Years" class="form-label"></label>
+                  <input type="text" class="form-control" id="inputCity" placeholder="Years">
+                </div>
+                <div class="col-md-3">
+                    <label for="Months" class="form-label"></label>
+                    <input type="text" class="form-control" id="inputCity" placeholder="Months">
+                </div>
+                <div class="col-md-3">
+                  <label for="Dates" class="form-label"></label>
+                  <input type="text" class="form-control" id="inputZip" placeholder="Dates">
+                </div>
+
+                <div class="col-12">
+                  <label for="Contact1" class="form-label"></label>
+                  <input type="text" class="form-control" id="inputZip" placeholder="Contact 1">
+                </div>
+
+                <div class="col-12">
+                    <label for="Contact2" class="form-label"></label>
+                    <input type="text" class="form-control" id="inputZip" placeholder="Contact 2">
+                </div>
+
+                <div class="col-12">
+                    <label for="Address" class="form-label"></label>
+                    <input type="text" class="form-control" id="inputZip" placeholder="Address">
+                </div>
+                
+
+                <div class="col-12">
+                    <button type="button" class="btn btn-primary">Register</button>
+                </div>
+              </form>
+
+          </div>
+          <div class="col-6">Half</div>
+        </div>
+      </div>
+
+</body>
+
+</html>
