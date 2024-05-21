@@ -10,6 +10,284 @@
         <link rel="icon" href="dist/icons/favicon_io/favicon.ico" type="image/x-icon">
 </head>
 <body>
+
+    <nav class="navbar bg bg-primary">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+        <span class="text-light"> Manage Doctor / Reffrerence Profiles</span> 
+        </a>
+        <button class="btn btn-primary position-absolute top-0 end-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+            </svg>
+        </button>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <div class="container-fluid">
+        <div class="row">
+            
+            <div class="col-sm-4 ">
+                <div class="card mt-2 shadow-lg p-3 mb-3 rounded">
+                    <div class="row mt-4">
+                        <h6 class="text-primary fw-bold fst-italic text-decoration-underline ">Doctor Details Registration</h6>        
+                   </div>
+                    <div class="row mt-2">
+                        <div class="col-4">
+                        <label for="name" class="form-label  mt-2">Doctor Code</label>
+                        </div>
+                        <div class="col-8">
+                            <div class="row">
+                                <div class="col-5">
+                                    <input type="text" id="name" name="name" value="" required class="form-control"/> 
+                                </div>
+                                <div class="col-2">
+                                    <label for="name" class="form-label  mt-2">Code2</label>
+                                </div>
+                                <div class="col-5">
+                                    <input type="text" id="name" name="name" value="" required class="form-control"/> 
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
     
+                    <div class="row mt-2">
+                        <div class="col-4 ">
+                        <label for="sname" class="form-label mt-2">Specialty </label>
+                        </div>
+                        <div class="col-5">
+                            <select name="gender" id="gender" class="form-select">
+                                <option selected>OPD</option>
+                                <option >In Ward</option>
+                                <option >Surgery</option>
+                            </select>
+                        </div> 
+                        <div class="col-3">
+                           &nbsp; <button class=" btn btn-success px-3">Specialties</button>
+                        </div>  
+                    </div>
+                    
+    
+                    <div class="row mt-2">
+                        <div class="col-4">
+                        <label for="gender" class="form-label mt-2">Doctor Name</label>
+                        </div>
+                        <div class="col-8">
+                            <div class="row">
+                                <div class="col-3">
+                                    <select name="gender" id="gender" class="form-select">
+                                        <option selected>Dr</option>
+                                        <option >Hons</option>
+                                        <option >Other</option>
+                                    </select>
+                                </div>
+                                <div class="col-9">
+                                    <input type="text" class="form-control" name="dname" id="dname" />
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+    
+                    <div class="row mt-2">
+                        <div class="col-4 ">
+                        <label for="contact" class="form-label mt-2">Descreption / Degrees</label>
+                        </div>
+                        <div class="col-8">
+                            <input type="text" id="contact" name="contact" value="" required class="form-control"/> 
+                        </div>   
+                    </div>
+    
+                    <div class="row mt-2">
+                        <div class="col-4 ">
+                        <label for="contact" class="form-label mt-2">Company</label>
+                        </div>
+                        <div class="col-8">
+                            <input type="text" id="contact" name="contact" value="" required class="form-control"/> 
+                        </div>   
+                    </div>
+    
+                    <div class="row mt-2">
+                        <div class="col-4 ">
+                        <label for="contact" class="form-label mt-2">Contact Number</label>
+                        </div>
+                        <div class="col-8">
+                            <input type="text" id="contact" name="contact" value="" required class="form-control"/> 
+                        </div>   
+                    </div>
+    
+                    <div class="row mt-2">
+                        <div class="col-4 ">
+                        <label for="contact" class="form-label mt-2">Email ID</label>
+                        </div>
+                        <div class="col-8">
+                            <input type="text" id="contact" name="contact" value="" required class="form-control"/> 
+                        </div>   
+                    </div>
+                    
+                    <div class="row mt-2">
+                        <div class="col-4 ">
+                        <label for="whts" id="whatsapp" class="form-label mt-2">Address</label>
+                        </div>
+                        <div class="col-8">
+                            <input type="text" id="whts" name="whts" value="" required class="form-control"/> 
+                        </div>   
+                    </div>
+                    
+                    <div class="row mt-2">
+                        <div class="col-4 ">
+                        <label for="email" class="form-label mt-2">Join Date</label>
+                        </div>
+                        <div class="col-8">
+                            <input type="date" id="date" name="date" value="" required class="form-control"/> 
+                        </div>   
+                    </div>
+                    
+                    <div class="row mt-2">
+                        <div class="col-4 ">
+                        <label for="address" class="form-label mt-2">Status</label>
+                        </div>
+                        <div class="col-8">
+                            <select name="gender" id="gender" class="form-select">
+                                <option selected>Active</option>
+                                <option >Deactive</option>
+                            </select>
+                        </div>   
+                    </div>
+                    <div class="row g-2 mt-3">
+                        <div class="d-grid gap-2 d-md-block">
+                            <button class="btn btn-success" type="button">Save / New Session &nbsp;<i class="bi bi-floppy" ></i></button>
+                            <button class="btn btn-warning" type="button">Update Details &nbsp; <i class="bi bi-pencil"></i></button>
+                            <button class="btn btn-danger" type="button">Delete Profile &nbsp; <i class="bi bi-trash"></i></button>
+                        </div>  
+            
+        
+                        </div>
+                </div>
+ 
+              
+                <div class="card mt-2 shadow-lg p-3 mb-2 rounded">
+                <div class="row mt-4">
+                     <h6 class="text-primary fw-bold fst-italic text-decoration-underline ">Doctor Time Sheduler</h6>        
+                </div>
+
+               <div class="row mt-2">
+                     <div class="col-4 ">
+                        <label for="timeslot" class="form-label mt-2">Time Slot</label>
+                    </div>
+                    <div class="col-5">
+                        <select name="timeslot" id="timeslot" class="form-select">
+                            <option selected>Slot-1</option>
+                            <option >Slot-2</option>
+                            <option >Slot-3</option>
+                        </select>
+                    </div>   
+                    <div class="col-3">
+                        <button class=" btn btn-success px-3">New Slot</button>
+                    </div>
+                </div>
+
+                <div class="row mt-2">
+                    <div class="col-4">
+                        <label for="name" class="form-label  mt-2">Doctor Code</label>
+                        </div>
+                        <div class="col-8">
+                            <div class="row">
+                                <div class="col-5">
+                                    <input type="time" id="name" name="name" value="" required class="form-control"/> 
+                                </div>
+                                <div class="col-2">
+                                    <label for="name" class="form-label  mt-2">TO</label>
+                                </div>
+                                <div class="col-5">
+                                    <input type="time" id="name" name="name" value="" required class="form-control"/> 
+                                </div>
+                            </div>
+                        </div> 
+                </div>
+
+                     <div class="row mt-2">
+                     <div class="col-4 ">
+                        <label for="ref" class="form-label mt-2">Days</label>
+                     </div>
+                     <div class="col-8">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">Monday</label><br>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                            <label class="form-check-label" for="flexCheckChecked">Tuesday</label><br>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                            <label class="form-check-label" for="flexCheckChecked">Wednesday</label><br>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                            <label class="form-check-label" for="flexCheckChecked">Thursday</label><br>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                            <label class="form-check-label" for="flexCheckChecked">Friday</label><br>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                            <label class="form-check-label" for="flexCheckChecked">Saturday</label><br>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                            <label class="form-check-label" for="flexCheckChecked">Sunday</label><br>
+                          </div>
+                     </div>   
+                     </div>
+                </div>    
+            </div>
+            
+            <div class="col-sm-8">
+                <div class="card mt-2 shadow-lg p-3 mb-5 rounded" style="height: 1004px;">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="mb-3"> 
+                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="&#xF002; Search Doctor [ Contact, Name, Speciality, ID ]" style="font-family:Arial, FontAwesome">
+                              </div>
+                        </div>
+
+                    </div>
+                    <table class="table table-hover table-bordered">
+                        <thead>
+                            <tr align="center">
+                                <th>Doctor ID</th>
+                                <th>Name</th>
+                                <th> Speciality</th>
+                                <th>Code</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr align="center">
+                                <td>1</td>
+                                <td>Manula Hashan</td>
+                                <td>General Physician</td>
+                                <td>MH50</td>
+                                <td class="text-success">Active</td>
+                            </tr>
+                            <tr align="center">
+                                <td>2</td>
+                                <td> Viran Jayathilaka</td>
+                                <td> VOG</td>
+                                <td>MH51</td>
+                                <td class="text-success">Active</td>
+                            </tr>
+                            <tr align="center">
+                                <td>3</td>
+                                <td> Selaka Chathuranga</td>
+                                <td>General Physician</td>
+                                <td>MH52</td>
+                                <td class="text-success">Active</td>
+                            </tr>
+                            <tr align="center">
+                                <td>4</td>
+                                <td>Smadhi Gunarathna</td>
+                                <td>General Physician</td>
+                                <td>MH53</td>
+                                <td class="text-success">Active</td>
+                            </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
