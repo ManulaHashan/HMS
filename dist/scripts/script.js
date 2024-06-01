@@ -62,3 +62,4 @@ function deleteRecord() {
       alertContainer.style.display = 'none'; // Hide the alert container
   }, 1000);
 }
+
